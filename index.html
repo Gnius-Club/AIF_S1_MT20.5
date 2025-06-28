@@ -1,24 +1,285 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 20.5: Taller de Sostenibilidad</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 20.5: Taller de Sostenibilidad</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes practiquen el rediseño para facilitar el desmontaje y la separación de componentes.</li>
+                                        <li>Que comprendan e introduzcan los conceptos de Diseño para el Ciclo de Vida (Lifecycle Design).</li>
+                                        <li>Que apliquen estrategias de Diseño para el Desensamblaje (DfD) como uniones reversibles y snap-fits inteligentes.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Activación y contextualización de la misión.</li>
+                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Desafío:</strong> Clarificación de objetivos y presentación del reto del día.</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Diálogo estratégico con Xolo para la conceptualización.</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Ejecución técnica y práctica aumentada por la Dupla Dinámica.</li>
+                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Showcase de prototipos, síntesis y reflexión.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Una nueva versión del ensamblaje de su mecanismo, rediseñado para ser modular y reparable.</li>
+                                        <li>Una sección actualizada en su documento de diseño titulada "Estrategia de Ciclo de Vida", que explica las mejoras de DfD.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Cuentas de Onshape para cada alumno.</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Un producto electrónico viejo para usar como ejemplo (ej. un control remoto, un ratón).</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar que Onshape y Xolo están funcionales.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Entender los principios de DfD (uniones reversibles, snap-fits, etc.) y la diferencia con el 'diseño para la obsolescencia'.</li>
+                                        <li><strong>Preparación de Ejemplos:</strong> Tener listo el producto electrónico para la demostración. Idealmente, tener un ejemplo de rediseño en Onshape que muestre una unión permanente convertida en una unión con tornillos.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
+                <p>Introducir la sesión como el momento de diseñar para el ciclo de vida completo del producto: de la cuna a la tumba (o al reciclaje).</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto de la Misión ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador presenta el desafío de diseñar para el "final de la vida" de un producto.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Saludos, diseñadores de sistemas. Han aprendido a diseñar para el inicio de la vida de un producto: su fabricación. Hoy, diseñaremos para su final. Un producto verdaderamente sostenible no solo es eficiente en su creación, sino también en su 'muerte'. ¿Puede ser fácilmente reparado? ¿Sus partes pueden separarse para ser recicladas? Hoy, diseñarán para el ciclo de vida completo.</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación de la IA ⏰ 2 minutos</h3>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Inicien su sesión con Xolo: 'Hola Xolo, listo para la Misión 20.5', seguido de su nombre, perfil y gustos. Esperen su confirmación.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 5 minutos</h2>
+                <p>Presentar el concepto de Diseño para el Desensamblaje (DfD) y el desafío de rediseñar un mecanismo para que sea desmontable.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Diseño para el Desensamblaje y el Desafío ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador presenta el concepto de DfD usando un ejemplo físico.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Muestra un viejo teléfono o control remoto). A menudo, estos productos están pegados o sellados. Repararlos es casi imposible y separar sus componentes para el reciclaje es muy difícil. La alternativa es el **Diseño para el Desensamblaje (DfD)**: diseñar productos para que puedan ser desmontados fácilmente. Su desafío es tomar su mecanismo y rediseñarlo para que sea explícitamente desmontable, reemplazando uniones permanentes por tornillos o snap-fits.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Declaración del "I Can Statement" ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">El objetivo de hoy es diseñar con responsabilidad. Al final de la sesión, podrán decir: <strong>'Yo puedo analizar un ensamblaje y rediseñarlo aplicando principios de Diseño para el Desensamblaje para facilitar su reparación y reciclaje.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM (Estrategias de Lifecycle Design) ⏰ 10 minutos</h2>
+                <p>Fase de diálogo con Xolo para aprender los principios clave del DfD y cómo consultar al Advisor sobre uniones reversibles.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Principios de DfD y Reciclabilidad ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) Los estudiantes consultan a Xolo sobre los principios del diseño para el final de la vida del producto.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Entremos al A.I. GYM. Hoy Xolo es su consultor de ciclo de vida. Para aprender las estrategias, consúltenle: <strong>'Xolo, explícame los principios del Diseño para el Desensamblaje, como las Uniones Reversibles y los Snap-Fits Inteligentes.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Guía de Consulta Técnica ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) El facilitador guía a los estudiantes sobre cómo consultar sobre la creación de uniones mecánicas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Este es un desafío de diseño mecánico. Para la parte técnica, consulten al Onshape AI Advisor sobre las mejores prácticas. Por ejemplo: <strong>'Best practices for designing snap-fit joints for 3D printing'</strong> o <strong>'How to model threads for standard M3 screws in Onshape?'</strong>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark (Rediseño para el Desensamblaje) ⏰ 22 minutos</h2>
+                <p>Fase de trabajo práctico intensivo para analizar uniones, planificar y ejecutar un rediseño que las haga reversibles.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Análisis, Planificación y Ejecución ⏰ 22 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Los estudiantes analizan su ensamblaje, dialogan con Xolo sobre una estrategia de rediseño y la implementan.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, al Brain Spark. Abran el archivo de su mecanismo. Analicen las uniones. ¿Son permanentes? Inicien un diálogo con Xolo, por ejemplo: **"Mi brazo robótico une el brazo a la base con un eje que es parte de la misma pieza."** Xolo les guiará para convertirla en una unión reversible. Usando el ciclo de consulta, rediseñen las piezas en su Part Studio para hacerlas modulares y reparables. Finalmente, documenten las mejoras en su brief bajo "Estrategia de Ciclo de Vida".</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM (Cierre de Sesión) ⏰ 5 minutos</h2>
+                <p>Fase final de "Showcase de Sostenibilidad", donde los estudiantes explican sus mejoras de DfD y discuten el rol del diseñador.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 8) El facilitador guía una reflexión sobre el poder del diseñador para influir en la cultura de consumo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                     Tiempo. Observen su ensamblaje "antes" y "después". Reflexionen: <strong>¿Por qué las empresas a menudo hacen productos difíciles de reparar? ¿Qué poder tienen ustedes como diseñadores para cambiar esa cultura?</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Pair (Showcase de Sostenibilidad) ⏰ 2 minutos</h3>
+                            <p>Los estudiantes presentan su "antes y después", explicando las mejoras de Diseño para el Desensamblaje.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    En parejas, muestren su "antes y después". Expliquen las mejoras de DfD que implementaron. Por ejemplo: "Antes, todo era una pieza. Ahora, el motor se puede reemplazar soltando estos dos tornillos."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Share (Síntesis y Cierre) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) El facilitador consolida la sesión, enfatizando el diseño con responsabilidad sistémica.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    Han alcanzado el nivel más alto de diseño consciente. Ya no solo piensan en el producto, sino en el sistema completo que lo rodea, desde su nacimiento hasta su reciclaje. Han diseñado con responsabilidad, una cualidad indispensable para los innovadores del siglo XXI. Han demostrado que un buen diseño puede ser una poderosa herramienta para un futuro más sostenible.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
